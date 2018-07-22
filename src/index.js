@@ -57,8 +57,8 @@ class App extends Component {
             >
               The grid is displayed on top of the wrapped component, matching its size, and has
               pointerEvents disabled, so you can click through it. A filter is applied to the
-              content to reduce saturation and contrast, so that the grid is more clearly visible
-              on top of the content. The color of the lines is configurable, as is the grid size
+              content to reduce saturation and contrast, so that the grid is more clearly visible on
+              top of the content. The color of the lines is configurable, as is the grid size
               (default is 5px) and the filter that gets applied to the content. The grid can be
               hidden setting the "visible" prop to false.
             </p>
@@ -77,43 +77,55 @@ class App extends Component {
               </a>
             </p>
 
-            <div style={{
-              marginTop: 18
-            }}>
-              <button onClick={() => this.setState({ visible: true })} style={{
-                backgroundColor: '#343434',
-                color: 'white',
-                cursor: 'pointer',
-                fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
-                fontSize: 16,
-                paddingTop: 6,
-                paddingLeft: 8,
-                paddingRight: 8,
-                paddingBottom: 6,
-                lineHeight: '16px',
-                fontWeight: 400,
-                borderWidth: 0,
-                outline: 'none',
-                borderRadius: 4,
-                marginRight: 12
-              }}>Show grid</button>
+            <div
+              style={{
+                marginTop: 18,
+              }}
+            >
+              <button
+                onClick={() => this.setState({ visible: true })}
+                style={{
+                  backgroundColor: '#343434',
+                  color: 'white',
+                  cursor: 'pointer',
+                  fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
+                  fontSize: 16,
+                  paddingTop: 6,
+                  paddingLeft: 8,
+                  paddingRight: 8,
+                  paddingBottom: 6,
+                  lineHeight: '16px',
+                  fontWeight: 400,
+                  borderWidth: 0,
+                  outline: 'none',
+                  borderRadius: 4,
+                  marginRight: 12,
+                }}
+              >
+                Show grid
+              </button>
 
-              <button onClick={() => this.setState({ visible: false })} style={{
-                backgroundColor: '#343434',
-                color: 'white',
-                cursor: 'pointer',
-                fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
-                fontSize: 16,
-                paddingTop: 6,
-                paddingLeft: 8,
-                paddingRight: 8,
-                paddingBottom: 6,
-                lineHeight: '16px',
-                fontWeight: 400,
-                borderWidth: 0,
-                outline: 'none',
-                borderRadius: 4,
-              }}>Hide grid</button>
+              <button
+                onClick={() => this.setState({ visible: false })}
+                style={{
+                  backgroundColor: '#343434',
+                  color: 'white',
+                  cursor: 'pointer',
+                  fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
+                  fontSize: 16,
+                  paddingTop: 6,
+                  paddingLeft: 8,
+                  paddingRight: 8,
+                  paddingBottom: 6,
+                  lineHeight: '16px',
+                  fontWeight: 400,
+                  borderWidth: 0,
+                  outline: 'none',
+                  borderRadius: 4,
+                }}
+              >
+                Hide grid
+              </button>
             </div>
           </div>
         </Grid>
