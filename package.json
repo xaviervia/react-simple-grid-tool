@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "sagui build",
-    "dist": "sagui dist",
+    "prepublishOnly": "babel src/ -d dist/ --ignore spec.js",
     "format": "sagui format",
     "start": "sagui develop --port 3000",
     "test": "sagui test",
@@ -18,6 +18,10 @@
     "test:unit:watch": "sagui test:unit --watch"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
     "ramda": "^0.25.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
