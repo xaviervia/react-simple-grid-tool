@@ -12,8 +12,6 @@ class Grid extends Component {
 
     this.state = {
       rootRect: {
-        top: 0,
-        left: 0,
         width: 0,
         height: 0,
       },
@@ -26,10 +24,10 @@ class Grid extends Component {
   onRef(domElement) {
     if (domElement) {
       this.rootElement = domElement
-      const { top, width, height, left } = domElement.getBoundingClientRect()
+      const { width, height } = domElement.getBoundingClientRect()
 
       this.setState({
-        rootRect: { top, left, width, height },
+        rootRect: { width, height },
       })
     }
   }
@@ -44,8 +42,6 @@ class Grid extends Component {
     const { children, visible, hardLineColor, softLineColor, gridSize, filter } = this.props
 
     const { rootRect } = this.state
-    const left = rootRect.left
-    const top = rootRect.top
     const filterStyle = filter ? { filter } : defaultFilterStyle
 
     return (
@@ -59,8 +55,6 @@ class Grid extends Component {
                 gridSize={gridSize}
                 width={rootRect.width}
                 height={rootRect.height}
-                left={left > 0 ? left : 0}
-                top={top > 0 ? top : 0}
               />
             ) : (
               undefined
