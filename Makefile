@@ -1,4 +1,5 @@
 gh-pages:
+	-git checkout -b gh-pages
 	-git checkout gh-pages
 	git reset --hard master
 	npm run build
