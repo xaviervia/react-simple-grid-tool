@@ -1,0 +1,36 @@
+{
+  "name": "react-simple-grid-tool",
+  "version": "0.0.1",
+  "description": "Simple React component for showing a baseline grid for debugging purposes",
+  "main": "dist/Grid.js",
+  "repository": "git@github.com:xaviervia/react-simple-grid-tool",
+  "author": "Fernando Via Canel <fernando.via@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "sagui build",
+    "dist": "sagui dist",
+    "format": "sagui format",
+    "start": "sagui develop --port 3000",
+    "test": "sagui test",
+    "test:lint": "sagui test:lint",
+    "test:typecheck": "sagui test:typecheck",
+    "test:unit": "sagui test:unit --coverage",
+    "test:unit:watch": "sagui test:unit --watch"
+  },
+  "devDependencies": {
+    "ramda": "^0.25.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "recompose": "^0.27.1",
+    "sagui": "^11.5.0"
+  },
+  "peerDependencies": {
+    "ramda": "^0.25.0",
+    "react": "^16.4.1",
+    "recompose": "^0.27.1"
+  },
+  "dependencies": {
+    "@lada/prefix": "^0.2.0",
+    "@primitives/layout": "^0.4.0"
+  }
+}
