@@ -1,5 +1,5 @@
 gh-pages:
-	git checkout gh-pages
+	-git checkout gh-pages
 	git reset --hard master
 	npm run build
 	cp dist/* .
